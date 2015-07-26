@@ -1,3 +1,10 @@
+#encoding: utf-8
+
+##
+## version.rb
+## Gaetan JUVIN 08/07/2015
+##
+
 require 'rabbitmq/sender/version'
 require 'rabbitmq/sender/config'
 require 'rabbitmq/sender/sender'

@@ -1,4 +1,10 @@
-# coding: utf-8
+#encoding: utf-8
+
+##
+## rabbitmq-sender.gemspec
+## Gaetan JUVIN 08/07/2015
+##
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rabbitmq/sender/version'

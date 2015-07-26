@@ -1,3 +1,10 @@
+#encoding: utf-8
+
+##
+## config.rb
+## Gaetan JUVIN 08/07/2015
+##
+
 require 'gconfig'
 
 module Rabbitmq
