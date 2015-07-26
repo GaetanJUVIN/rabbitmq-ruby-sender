@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['gaetanjuvin@gmail.com']
 
   spec.summary       = %q{Rabbitmq ruby sender}
-  spec.homepage      = 'https://github.com/GaetanJUVIN/rabbitmq-sender'
+  spec.homepage      = 'https://github.com/GaetanJUVIN/rabbitmq-ruby-sender'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
