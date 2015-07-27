@@ -18,7 +18,7 @@ module Rabbitmq
 		default timeout:    5
 		default user:       nil
 		default password:   nil
-		default vhost:      nil
+		default vhost:      '/'
 		default prefetch:   10
 		default verbose:    false
 		default retry_time: 5

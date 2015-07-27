@@ -2,22 +2,6 @@
 
 Easy ruby rabbitmq sender.
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'rabbitmq-sender'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install rabbitmq-sender
-
 ## Usage
 
 ```ruby
@@ -37,19 +21,34 @@ Rabbitmq::Sender.send_to('send_queue', 'supermessage')
 ## Configuration - defaults
 ```
 logger:     Logger.new(STDOUT)
-connection: nil
 host:       '8.8.8.8'
 port:       5672
 pool:       20
 timeout:    5
 user:       nil
 password:   nil
-vhost:      nil
+vhost:      '/'
 prefetch:   10
 verbose:    false
 retry_time: 5
 
 ```
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'rabbitmq-sender'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install rabbitmq-sender
 
 ## Contributing
 
