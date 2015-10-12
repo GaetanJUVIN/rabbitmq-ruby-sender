@@ -78,8 +78,8 @@ module Rabbitmq
 		def send_to(queue, msg, reply_queue = nil)
 		  self._do_connection
 		  if @state == :connected
-		    @rmq_queue = @rmq_channel.queue(queue, :durable => true, :exlusive => false)
-		    @rmq_channel.default_exchange.publish(msg, :routing_key => @rmq_queue.name, :reply_to => reply_queue)
+		    @rmq_queue = @rmq_channel.queue(queue, durable: Rabbitmq::Sender.config.durable, exlusive: false, auto_delete: Rabbitmq::Sender.config.auto_delete)
+		    @rmq_channel.default_exchange.publish(msg, routing_key: @rmq_queue.name, reply_to: reply_queue)
 		  end
 		end
 	end
