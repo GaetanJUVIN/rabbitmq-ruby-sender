@@ -5,6 +5,7 @@
 ## Gaetan JUVIN 08/07/2015
 ##
 
+require 'logger'
 require 'gconfig'
 
 module Rabbitmq
